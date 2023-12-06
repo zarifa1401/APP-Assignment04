@@ -2,14 +2,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: skyblue;
-  /* font-family: "play sans", sans-serif; */
+
   font-family: Roboto Slab;
+  font-size: 14px;
 }
 
 .navbar {
   background-color: #333;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .navbar a {
@@ -24,10 +31,11 @@ body {
 }
 
 .product-container {
-  width: 800px;
-  margin: 0 auto;
+  width: 645px;
+  margin: auto;
   background-color: #fff;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .row {
@@ -46,10 +54,11 @@ body {
   background-color: lightgreen;
   border: 2px solid green;
   padding: 5px;
-  width: 78%;
-  margin-left: 32px;
-  margin-top: 32px;
-  margin-bottom: 62px;
+  width: 75%;
+  margin: 32px;
+
+  font-size: 12px;
+  text-align: center;
 }
 
 .product-details {
@@ -84,7 +93,84 @@ footer {
   text-align: center;
   padding: 6px;
 }
+
 .title-related {
   margin-left: 8px;
   margin-bottom: 8px;
+}
+//////about
+.content-container {
+  width: 650px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.members {
+  font-size: 12px;
+  /* display: block; */
+}
+.team {
+  display: flex;
+  text-align: center;
+  gap: 14px;
+}
+.member-info {
+  margin-top: 0px;
+}
+.title-info {
+  margin-top: -12px;
+}
+.content-img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+.member-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.image-container:hover .caption {
+  display: block;
+}
+/* home part, adding hover text on related product pictures */
+.related-product {
+  position: relative;
+  display: inline-block;
+}
+
+.related-product-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+.related-product:hover .related-product-name {
+  display: block;
+  opacity: 1;
 }
